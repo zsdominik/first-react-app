@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import "./App.css";
-import HelloWorld from "./HelloWorld/HelloWorld";
+import HelloPureComponent from "./comopnents/HelloPureComponent";
+import HelloFunctionalComponent from "./comopnents/HelloFunctionalComponent";
+import HelloReactComponent from "./comopnents/HelloReactComponent";
 
-// https://medium.com/better-programming/when-to-use-react-purecomponent-723f85738be1
-// class App extends PureComponent {
 class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <h1>Hello world from jsx</h1>
-        <HelloWorld />
+        <h1>Hello world from JSX</h1>
+        <HelloPureComponent />
+        <HelloFunctionalComponent />
+        <HelloReactComponent />
       </div>
     );
 
